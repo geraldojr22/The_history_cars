@@ -1,5 +1,9 @@
  @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,700;1,400&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Exo+2:ital,wght@1,100&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Exo+2:ital,wght@1,600&display=swap');
+
+
 
 *{
     margin: 0px;
@@ -23,13 +27,13 @@ html,
  body { 
     width: 100%;
     overflow-x: hidden;
-    background:rgb(41, 73, 176);
+    background-image: url("/images/Dark-background.jpg");
+    background-size: 50%;
 }
 
 header {
     width: 100%;
     height: 585px;
-    background: linear-gradient(rgb(245, 42, 42), rgb(242, 94, 129), rgb(41, 73, 176));
 }
 
 
@@ -105,7 +109,7 @@ nav ul button:hover {
     max-width: 1000px;
     min-width: 300px;
     height:450px;
-    background: linear-gradient(rgb(230, 229, 229), rgb(170, 170, 170), rgb(129, 156, 153));
+    background: linear-gradient(rgb(125, 111, 97), rgb(87, 86, 85), rgb(47, 47, 47));
     border-radius: 8px;
     box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.5);
     -webkit-box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.5);
@@ -115,21 +119,31 @@ nav ul button:hover {
     padding: 20px;
 }
 
+.header-block{
+    overflow: hidden;
+}
+
 .header-block img {
-    position: absolute;
-    right: 2%;
-    bottom: 5%;
+    float: right;
+    height: 350px;
+    margin-top: -60px;
+}
+
+.header-block img:last-child{
+    float: left;
+    height: 579px;
+    margin-top: -200px;
 }
 
 .header-block .text h2 {
-    color: rgb(47, 93, 123);
-    margin-top: 60px;
+    color: rgb(58, 58, 59);
+    margin-top: 10px;
     margin-left: 50px;
-    text-align: left;
+    text-align: center;
     transform: translate(-20px);
     transition: transform 0.5s;
-    font-family: 'Lobster';
-    font-size: 30px;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 40px;
 }
 
 .header-block .text p {
@@ -150,10 +164,11 @@ section .catalog {
     padding: 100px;
 }
 
+
 section .filter-card {
     width: 980px;
     height: 150px;
-    background: var(--gray);
+    background: rgb(171, 167, 167);
     border-radius: 8px;
     margin: 0 auto;
     display: flex;
@@ -168,6 +183,9 @@ section .filter-card {
     border: none;
     border-radius: 4px 0px 0px 4px;
     text-indent: 10px;
+    font-family: 'Exo 2';
+    font-weight: bold;
+    color: black;
 }
 
 .search-button {
@@ -176,7 +194,7 @@ section .filter-card {
     border-radius: 0px 4px 4px 0px;
     border: none;
     background: var(--blue);
-    color: white;
+    color: rgb(230, 211, 211);
     cursor: pointer;
     font-size: 1.1em;
     transition: 0.3s;
@@ -190,6 +208,9 @@ section .filter-card {
 .title-wrapper-catalog {
     margin-top: 50px;
     padding-bottom: 20px;
+    font-family: 'Exo 2';
+    font-size: 20px;
+    color: rgb(171, 167, 167);
 }
 
 section .card-wrapper {
@@ -204,7 +225,7 @@ section .card-wrapper {
 
 section .card-item {
     height: 400px;
-    background: var(--gray);
+    background: rgb(171, 167, 167);
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -230,14 +251,17 @@ section .card-item {
 }
 
 .card-item h3{
-    font-family: 'Lobster';
+    font-family: 'Exo 2';
+    color: black;
+    font-weight: bold;
     font-size: 25px;
 }
 
 .card-item p {
     width: 90%;
-    font-style: italic;
-    color: #00000070;
+    font-family: 'Exo 2';
+    font-weight: bold;
+    color: #000000e5;
     text-align: center;
 }
 
@@ -275,7 +299,7 @@ section .card-item {
     max-width: 1000px;
     min-width: 300px;
     height: 600px;
-    background: #dedede;
+    background: rgb(171, 167, 167);
     margin: 0 auto;
     border-radius: 8px;
     z-index: 10;
@@ -323,7 +347,8 @@ section .card-item {
  .features{
     width: 100%;
     height: 100%;
-    background: var(--gray);
+    background-image:url('/images/Background-Carbon.jpg');
+    background-size: 30%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -332,6 +357,9 @@ section .card-item {
 
  .title-wrapper-features{
     padding: 20px 0px;
+    font-family: 'Exo 2';
+    font-size: 30px;
+    color: #dedede;
  }
 
  .feature-card-block {
@@ -339,7 +367,7 @@ section .card-item {
     max-width: 1000px;
     min-width: 300px;
     height: 600px;
-    background: white;
+    background: rgb(171, 167, 167);
     margin: 0 auto;
     border-radius: 8px;
     z-index: 10;
@@ -366,6 +394,15 @@ section .card-item {
 
     max-width: 60%;
     margin: 5px ;
+    font-family: 'Exo 2';
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+ }
+
+ .feature-text-content p {
+
+    margin-top: 20px;
  }
 
  .feature-card-item img {
@@ -387,7 +424,8 @@ section .card-item {
     
     width: 100%;
     height: 200px;
-    background: var(--green);
+    background-image: url("/images/background-Metal.jpg");
+    background-size: 50%;
     padding: 20px 10px;
  }
 
@@ -406,11 +444,13 @@ section .card-item {
  .footer-company,
  .footer-rental,
  .footer-company,
- .footer-social  {
+ .footer-social,
+ .footer-contact  {
 
     color: white;
     height: 100%;
     min-height: 100px;
+    font-family: 'Exo 2' ;
 
  }
 
@@ -434,11 +474,13 @@ section .card-item {
 
     width: 100%;
     height: 50px;
-    background: var(blue);
+    background-color: rgb(240, 60, 60);
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Exo 2';
+    font-weight: bold;
  }
 
  /* Responsive adjustments */
